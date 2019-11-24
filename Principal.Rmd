@@ -3,6 +3,8 @@ title: "Trabajo Final R"
 author: "Pamela Lara Campos"
 output: 
   html_document:
+    theme: yeti
+    highlight: espresso
     fig_caption: false
     fig_width: 7
     fig_height: 6
@@ -25,29 +27,48 @@ library(ggplot2)
 library(plotly)
 ```
 
-## Expresiones Regulares
+## **Expresiones Regulares**
 
-### Página 1
+Las expresiones regulares son un patron que representa un grupo de caracteres y se emplea para compararlo con otro grupo de caracteres, se pueden utilizar para validar el ingreso de información de formularios o buscar caracteres.
 
-Algo...
+### Guía básica de Expresiones Regulares
 
-### Página 2
+En esta guía econtramos términos comunes y explicados para utilizar expresiones regulares. Además, también menciona otra página donde se encuentran otro s
 
-Algo....
+Link: [Guía básica de Expresiones Regulares](https://indexingdata.com/blog/analitica-web/guia-basica-expresiones-regulares/)
 
-## Recursos Sobre Markdown
+### Regex Cheat Sheet
 
-### Página 1
+Esta página nos la dió la profesora Luz en las clases de Python.
 
-Algo...
+Link: [Regex Cheat Sheet: A Quick Guide to Regular Expressions in Python](https://www.dataquest.io/blog/regex-cheatsheet/)
 
-### Página 2
+## **Markdown**
 
-Algo....
+Es un lenguaje que se utiliza para generar documentación de forma sencilla. Permite traspasar texto plano a HTML 
 
-## Matrícula Sistema Ed. Superior  
+### Markdown & Pygments Lexers Cheat Sheet
 
-Estos gráficos muestran matrículas de educación superior en Chile entre los años 2005 y 2019 para pregrado.
+Esta es una guía rápida para recordar markdown.
+
+Se puede encontrar de forma fácil y con ejemplos cómo dar forma a un texto mostrar texto al realizar un documento.
+
+Link: [Markdown & Pygments Lexers Cheat Sheet](https://joedicastro.com/pages/markdown.html)
+
+### Que es Markdown
+
+Esta página está creada por un chico blogger.
+
+Existe el video tutorial y la página, los dos tienen el mismo contenido, la página tiene lo mismo que indica el video pero agrega otros contenidos como _"Editores M"_  y _"Multimarkdown"_.
+
+Link: [Tutorial Markdown Video](https://www.youtube.com/watch?v=y6XdzBNC0_0)  
+Link: [Tutorial Markdown](https://markdown.es/)
+
+***
+
+## **Matrícula Sistema Ed. Superior** 
+
+Estos gráficos muestran matrículas de educación superior en Chile entre los años 2005 y 2019 para pregrado en el área "_Tecnología_".
 
 Muestra de datos:
 
@@ -316,11 +337,20 @@ kable(mtr_carreras[, c(1,4)], caption = "") %>%
       group_rows("Carrera: Técnico en Análisis de Sistemas Informáticos", 7, 9) %>%
       group_rows("Carrera: Técnico en Computación e Informática", 10, 12)
 ```
-_________________________________________________________________________________________________________
+***
 > **Referecias:**  
-_[Consejo Nacional de Educación](https://www.cned.cl/indices-educacion-superior)_  
-_[KableExtra Tutorial](https://rstudio-pubs-static.s3.amazonaws.com/444395_76727eaf9c774fa8bf932bed16500a00.html)_  
-_[Higtcharter](http://jkunst.com/highcharter/index.html)_
+<a href="http://bit.ly/2rl3S63" target="_blank">_Consejo Nacional de Educación_</a>  
+<a href="http://bit.ly/2qxMFqa" target="_blank">_KableExtra Tutoria_</a>  
+<a href="http://bit.ly/35wkyGx" target="_blank">_Higtcharter_</a>  
+
+```{r, include=FALSE}
+# esta parte de los link no o hice con rmarkdown porque no encontré que se puedan abrir en una pestaña diferente, por eso lo puse en HTML
+#_[Consejo Nacional de Educación](https://www.cned.cl/indices-educacion-superior)_  
+#_[KableExtra Tutorial](https://rstudio-pubs-static.s3.amazonaws.com/444395_76727eaf9c774fa8bf932bed16500a00.html)_  
+#_[Higtcharter](http://jkunst.com/highcharter/index.html)_
+```
+
+
 
 
 
