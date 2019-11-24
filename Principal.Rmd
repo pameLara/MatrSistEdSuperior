@@ -45,22 +45,18 @@ Algo...
 
 Algo....
 
-## Matrícula Sistema Ed. Superior
+## Matrícula Sistema Ed. Superior  
 
 Estos gráficos muestran matrículas de educación superior en Chile entre los años 2005 y 2019 para pregrado.
 
 Muestra de datos:
 
-* *País: Chile*
-
-* *Región: Región Metropolitana*
-
-* *Área Académica: Tecnología*
-
-* *Años : 2005 hasta 2019*
+* País: *Chile*  
+* Región: *Región Metropolitana*  
+* Área Académica: *Tecnología* 
+* Años : *2005 hasta 2019*
 
 ### Matrículas por Tipo de Institución
-
 ```{r include=FALSE}
 matriculas <- read.table("recursos/detalle_mtr.csv", sep = ",", header = TRUE, encoding = "UTF-8")
 names(matriculas) <- c("acreditacion","cruch","programa","anio","comuna_institucion","calculo",
@@ -116,7 +112,6 @@ kable(mtr_separado, caption = "") %>%
   
 ```
 
-
 ```{r, include=FALSE}
 grafico1 <- hchart(mtr_x_inst, "scatter", 
                    hcaes(x = anio, y = total, group = tipo_institucion)) %>% 
@@ -131,15 +126,11 @@ grafico1 <- hchart(mtr_x_inst, "scatter",
 grafico1
 ```
 
+* C.F.T : *Centro de Formación Técnica*  
+* I.P. : *Instituto Profesional*  
+* Univ. : *Universidad*
 
-* *C.F.T : Centro de Formación Técnica*
-
-* *I.P. : Instituto Profesional*
-
-* *Univ. : Universidad*
-
-
-### Crecimiento de Matr. por Tipo de Institución
+### Crecimiento de Matr. por Tipo de Institución  
 
 En este gráfico se puede observar lo que ha variado el total de matriculas respecto al año anterior. Se ve que las matrículas para el tipo de institución Centro de Formación Técnica (C.F.T.) han decaído de forma considerable desde el año 2015, respecto al año 2010 donde alcanzó estar por sobre las instituciones de tipo Instituto Profesional (I.P.) y Universidades (Univ.).
 
@@ -191,7 +182,8 @@ grafico3 <- hchart(mtr_var, "areaspline",
 grafico3
 ```
 
-### Matrículas por Sexo
+### Matrículas por Sexo  
+
 Se puede observar que las carreras que tienen que ver con el área de Tecnología, tienen mayor preferencia por el sexo masculino de forma considerable.
 
 ```{r ggplot, include=FALSE}
@@ -223,25 +215,18 @@ ggplotly(grafico2)
 ```
 
 
-### Matrículas por Carrera
+### Matrículas por Carrera  
 
 Muestra de datos:
 
-* *País: Chile*
-
-* *Región: Región Metropolitana*
-
-* *Carreras:*
-
-  + *Ingeniería Civil en Computación y/o Informática*
-  
-  + *Ingeniería en Computación e Informática y similares*
-  
-  + *Técnico en Análisis de Sistemas Informáticos*
-  
-  + *Técnico en Computación e Informática*
-
-* *Años : 2005 hasta 2019*
+* País: *Chile*  
+* Región: *Región Metropolitana*  
+* Carreras:  
+  + *Ingeniería Civil en Computación y/o Informática*  
+  + *Ingeniería en Computación e Informática y similares*  
+  + *Técnico en Análisis de Sistemas Informáticos*  
+  + *Técnico en Computación e Informática*  
+* Años : *2005 hasta 2019*  
 
 En esta tabla se visualizan las 3 instituciones donde se matricularon más alumnos por carrera.
 
@@ -332,9 +317,9 @@ kable(mtr_carreras[, c(1,4)], caption = "") %>%
       group_rows("Carrera: Técnico en Computación e Informática", 10, 12)
 ```
 _________________________________________________________________________________________________________
-> **_Referecias:_**</br>
-_[Consejo Nacional de Educación](https://www.cned.cl/indices-educacion-superior)_</br>
-_[KableExtra Tutorial](https://rstudio-pubs-static.s3.amazonaws.com/444395_76727eaf9c774fa8bf932bed16500a00.html)_</br>
+> **Referecias:**  
+_[Consejo Nacional de Educación](https://www.cned.cl/indices-educacion-superior)_  
+_[KableExtra Tutorial](https://rstudio-pubs-static.s3.amazonaws.com/444395_76727eaf9c774fa8bf932bed16500a00.html)_  
 _[Higtcharter](http://jkunst.com/highcharter/index.html)_
 
 
