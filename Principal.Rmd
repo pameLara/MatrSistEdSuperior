@@ -33,13 +33,13 @@ Las expresiones regulares son un patron que representa un grupo de caracteres y 
 
 ### Guía básica de Expresiones Regulares
 
-En esta guía econtramos términos comunes y explicados para utilizar expresiones regulares. Además, también menciona otra página donde se encuentran otro s
+En esta guía econtramos términos comunes y explicados para utilizar expresiones regulares. Además, también menciona otra página [Cheatography.com](https://www.cheatography.com/jay-taylor/cheat-sheets/google-analytics-regular-expressions/) donde también podemos encontrar caracteres y grupos con su significado para utilizar en una exp. regular. Personalmente me gusta mucho esta página porque está en español y te enseña ademas a utilizar una [herramienta](https://regex101.com/) para probar expresiones.
 
 Link: [Guía básica de Expresiones Regulares](https://indexingdata.com/blog/analitica-web/guia-basica-expresiones-regulares/)
 
 ### Regex Cheat Sheet
 
-Esta página nos la dió la profesora Luz en las clases de Python.
+Esta página nos la dió la profesora Luz en las clases de Python, también es muy útil y tiene un link a un [PDF](https://www.dataquest.io/wp-content/uploads/2019/03/python-regular-expressions-cheat-sheet.pdf).
 
 Link: [Regex Cheat Sheet: A Quick Guide to Regular Expressions in Python](https://www.dataquest.io/blog/regex-cheatsheet/)
 
@@ -51,7 +51,7 @@ Es un lenguaje que se utiliza para generar documentación de forma sencilla. Per
 
 Esta es una guía rápida para recordar markdown.
 
-Se puede encontrar de forma fácil y con ejemplos cómo dar forma a un texto mostrar texto al realizar un documento.
+Se puede encontrar de forma fácil y con ejemplos, cómo dar forma a un texto en markdown al realizar un documento y se visualiza como se ve, o sea, muestra el código y su resulttado, me pareció bastante buena y rápida para enontrar el contenido que yo utilicé realizando este trabajo.
 
 Link: [Markdown & Pygments Lexers Cheat Sheet](https://joedicastro.com/pages/markdown.html)
 
@@ -132,6 +132,9 @@ kable(mtr_separado, caption = "") %>%
   kable_styling(bootstrap_options = c("striped", "hover"), full_width = F, font_size = 12)
   
 ```
+
+Se puede observar que los ultimos 6 años, han incrementado  las matriculas a las instituciones de tipo I.P. superando a las Universidades.
+
 
 ```{r, include=FALSE}
 grafico1 <- hchart(mtr_x_inst, "scatter", 
