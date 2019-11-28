@@ -344,7 +344,7 @@ kable(mtr_carreras[, c(1,4)], caption = "") %>%
 <a href="http://bit.ly/35wkyGx" target="_blank">_Higtcharter_</a>  
 
 ```{r, include=FALSE}
-# esta parte de los link no o hice con rmarkdown porque no encontré que se puedan abrir en una pestaña diferente, por eso lo puse en HTML
+# esta parte de los link no lo hice con rmarkdown porque no encontré que se puedan abrir en una pestaña diferente, por eso lo puse en HTML
 #_[Consejo Nacional de Educación](https://www.cned.cl/indices-educacion-superior)_  
 #_[KableExtra Tutorial](https://rstudio-pubs-static.s3.amazonaws.com/444395_76727eaf9c774fa8bf932bed16500a00.html)_  
 #_[Higtcharter](http://jkunst.com/highcharter/index.html)_
