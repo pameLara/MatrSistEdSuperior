@@ -1,7 +1,7 @@
 # MatrSistEdSuperior
 Trabajo Final R
 
-Para ejecutar el .Rmd de este proyecto se deben instalar las siguientes librerias:
+Para ejecutar el Principal.Rmd de este proyecto se deben instalar las siguientes librerias:
 
 plyr  
 dplyr  
