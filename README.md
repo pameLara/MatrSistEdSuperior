@@ -22,5 +22,3 @@ install.packages("reshape2")
 install.packages("kableExtra")  
 install.packages("ggplot2")  
 install.packages("plotly")  
-
-Pamela Lara Campos
